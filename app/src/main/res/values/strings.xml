@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TryMe</string>
+    <string name="api_key">c813da82546f4bb2ae76a9e1a55c65a2</string>
+    <string-array name="tags">
+        <item>Main Course</item>
+        <item>Side Dish</item>
+        <item>Dessert</item>
+        <item>Appetizer</item>
+        <item>Salad</item>
+        <item>Bread</item>
+        <item>Breakfast</item>
+        <item>Soup</item>
+        <item>Beverage</item>
+        <item>Sauce</item>
+        <item>Marinade</item>
+        <item>Finger Food</item>
+        <item>Snack</item>
+        <item>Drink</item>
+    </string-array>
+</resources>

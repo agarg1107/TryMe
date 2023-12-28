@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/graident_background"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Recipe_Activity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        app:title="Recipe Details"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:scrollbarSize="0dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Recipe_detail_meal_name"
+                android:layout_width="match_parent"
+                android:text="Recipe Name"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+
+                <TextView
+                    android:id="@+id/Recipe_detail_meal_source"
+                    android:layout_width="match_parent"
+                    android:text="Source"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:padding="8dp"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/Recipe_detail_meal_image"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pizza"/>
+            <TextView
+                android:id="@+id/Placeholder"
+                android:layout_width="match_parent"
+                android:text="Summery"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/Recipe_detail_meal_summery"
+                android:layout_width="match_parent"
+                android:text="Summery"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/Instructions_Placeholder"
+                android:layout_width="match_parent"
+                android:text="Instructions"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:id="@+id/Recipe_Instruction_view"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/Recipe_detail_meal_similar"
+                android:layout_width="match_parent"
+                android:text="Similar Dish"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:id="@+id/Recipe_similar_recipe"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/Recipe_detail_meal_ingredients"
+                android:layout_width="match_parent"
+                android:text="Ingredients"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:padding="8dp"
+                android:layout_height="wrap_content"
+                />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:id="@+id/Recipe_detail_meal_ingredients_view"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
