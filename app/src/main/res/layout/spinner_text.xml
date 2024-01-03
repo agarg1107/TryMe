@@ -5,6 +5,7 @@
     android:padding="8dp"
     android:text="Menu"
     android:textSize="18sp"
+    android:fontFamily="@font/baloo_bhaijaan"
     >
 
 </CheckedTextView>

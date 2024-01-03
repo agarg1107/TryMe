@@ -13,7 +13,7 @@ import com.example.tryme.R
 
 class InstructionAdapter(val instruction : List<getInstructions>) : RecyclerView.Adapter<InstructionAdapter.InstructionViewHolder>() {
     class InstructionViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView){
-        val instruction_name = itemView.findViewById<TextView>(R.id.Instruction_name)
+//        val instruction_name = itemView.findViewById<TextView>(R.id.Instruction_name)
         val instruction_step = itemView.findViewById<RecyclerView>(R.id.Instruction_step_view)
     }
 
@@ -29,7 +29,7 @@ class InstructionAdapter(val instruction : List<getInstructions>) : RecyclerView
 
     override fun onBindViewHolder(holder: InstructionViewHolder, position: Int) {
         val context : Context = holder.itemView.context
-        holder.instruction_name.text = instruction[position].name
+//        holder.instruction_name.text = instruction[position].name
         holder.instruction_step.setHasFixedSize(true)
         holder.instruction_step.layoutManager = LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
         val instructionStepAdapter = InstructionStepAdapter(instruction[position].steps)

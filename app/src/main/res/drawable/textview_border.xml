@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color= "@color/tab_back" /> <!-- Set the background color of the TextView -->
+    <corners android:radius="8dp" /> <!-- Adjust the corner radius as needed -->
+    <stroke android:width="5dp" android:color="@color/tab_back_back" /> <!-- Set the border width and color -->
+</shape>

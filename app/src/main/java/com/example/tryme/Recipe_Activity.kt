@@ -68,7 +68,8 @@ class Recipe_Activity : AppCompatActivity() {
             Recipe_detail_meal_summery.text = removeHtmlTags(recipeDetailResponse.summary)
             Recipe_detail_meal_ingredients_view.setHasFixedSize(true)
             visible_visible()
-            Recipe_detail_meal_ingredients_view.layoutManager = GridLayoutManager(this@Recipe_Activity,2);
+            Recipe_detail_meal_ingredients_view.layoutManager = LinearLayoutManager(this@Recipe_Activity,LinearLayoutManager.HORIZONTAL,false)
+//            Recipe_detail_meal_ingredients_view.layoutManager = GridLayoutManager(this@Recipe_Activity,3);
             ingrediantsAdapter = IngrediantsAdapter(recipeDetailResponse.extendedIngredients)
             Recipe_detail_meal_ingredients_view.adapter = ingrediantsAdapter
         }
